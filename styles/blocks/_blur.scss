@@ -1,0 +1,14 @@
+.blur{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #84A178;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  display: none;
+
+  &.active{
+    display: block;
+  }
+}

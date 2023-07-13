@@ -1,0 +1,120 @@
+.franchise-modal{
+  width: 570px;
+  background: #FCFCFC;
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
+  padding: 30px 60px;
+  transform: translate(-50%,-50%) scale(0);
+  transition: all 0.3s ease;
+  opacity: 0;
+
+  &.active{
+    transform:translate(-50%,-50%) scale(1);
+    opacity: 1;
+  }
+
+  &__close{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+
+  &__title{
+    text-align: center;
+    font-family: "Seymour One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #131313;
+    margin-bottom: 30px;
+    cursor: default;
+  }
+
+  form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  &__inp{
+    width: 290px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #84A178;
+    background: #F8D24E1A;
+    padding: 0 20px;
+    margin-bottom: 15px;
+  }
+
+  &__btn{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #131313;
+    padding: 12px 34px;
+    background: #F8D24E;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__content{
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 600px) {
+    &{
+      width: 95vw;
+      background: #FCFCFC;
+      border: 2px solid #F8D24E;
+      border-radius: 10px;
+      padding: 30px 10vw;
+      transform: translate(-50%,-50%) scale(0);
+      transition: all 0.3s ease;
+      opacity: 0;
+    }
+
+    &__close{
+      position: absolute;
+      right: 4.17vw;
+      top: 4.17vw;
+      cursor: pointer;
+    }
+  }
+  @media (max-width: 420px) {
+    &__content{
+      font-size: 3.81vw;
+      font-weight: 400;
+      line-height: 5.24vw;
+      color: #131313;
+      cursor: default;
+    }
+
+    &__title{
+      text-align: center;
+      font-family: "Seymour One", sans-serif;
+      font-weight: 400;
+      font-size: 4.76vw;
+      line-height: 6.67vw;
+      color: #131313;
+      margin-bottom: 7.14vw;
+      cursor: default;
+    }
+
+    &__btn{
+      padding: 12px 34px;
+      font-weight: 600;
+      font-size: 3.33vw;
+      line-height: 4.05vw;
+      color: #131313;
+      background: #F8D24E;
+      border-radius: 10px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

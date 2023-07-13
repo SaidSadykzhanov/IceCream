@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style: none;
+  background: transparent;
+  cursor: default;
+  font-family: "Montserrat", sans-serif;
+
+  &::selection{
+    background: transparent;
+  }
+}
